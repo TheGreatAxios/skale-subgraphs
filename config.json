@@ -1,0 +1,24 @@
+{
+    "version": "1", 
+    "name": "Transfers",
+    "abis": {
+      "Transfers": {
+        "path": "./usdt-erc20.abi.json"
+      }
+    },
+    "chains": ["skale-nebula-testnet", "skale-europa"],
+    "instances": [
+      {
+        "abi": "Transfers", 
+        "address": "0xD8FBac5c966ac9Bfb006564D2603cF03532A0991", 
+        "startBlock": 1405096, 
+        "chain": "skale-nebula-testnet"
+      },
+      {
+        "abi": "Transfers", 
+        "address": "0x31E0B85Eff93fc3cb5423cd3E23868F5B18fF0bB", 
+        "startBlock": 6621055, 
+        "chain": "skale-europa"
+      }
+    ]
+  }
