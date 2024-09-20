@@ -1,11 +1,14 @@
-# Instant Subgraphs
+# SKALE Subgraphs
 
-[Goldsky's Instant Subgraphs](https://docs.goldsky.com/subgraphs/guides/create-a-no-code-subgraph)
+## Installation
 
-Simple JSON config file to index a contract with an ABI.
+1. Fork and `git clone git@github.com:TheGreatAxios/skale-subgraphs.git`
+2. npm install
 
-In this example I've taken a reduced version of a fully compatible ERC-20 ABI to reduce the amount of events to index. Then, I've created a config file to index two contracts:
-1. [FlocLoyaltyToken](https://lanky-ill-funny-testnet.explorer.testnet.skalenodes.com/address/0xD8FBac5c966ac9Bfb006564D2603cF03532A0991) in Nebula Testnet
-2. [Compass](https://elated-tan-skat.explorer.mainnet.skalenodes.com/address/0x31E0B85Eff93fc3cb5423cd3E23868F5B18fF0bB) in Europa Mainnet
+## Deploying Subgraphs
 
-You can deploy a subgraph from scratch and start indexing these contracts simply running:  `goldsky subgraph deploy skale-tokens/1.0.0 --from-abi config.json`
+1. To deploy token subgraphs, run `npx goldsky subgraph deploy tokens/1.0.0 --from-abi tokens.json`
+
+### Notes
+1. You may want to update blocks. For how the CLI is designed would probably write a small util script to generate the config on the fly
+2. You have to manually add tokens (for now) haven't tried doing a * wildcard index

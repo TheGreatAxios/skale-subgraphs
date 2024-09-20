@@ -1,0 +1,15 @@
+{
+  "name": "skale-subgraphs",
+  "version": "1.0.0",
+  "description": "[Goldsky's Instant Subgraphs](https://docs.goldsky.com/subgraphs/guides/create-a-no-code-subgraph)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@goldskycom/cli": "^9.7.1"
+  }
+}
